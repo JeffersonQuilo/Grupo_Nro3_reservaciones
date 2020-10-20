@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "448883937573",
+    "firebase_url": "https://reserapp-4a9f6.firebaseio.com",
+    "project_id": "reserapp-4a9f6",
+    "storage_bucket": "reserapp-4a9f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448883937573:android:59467780d6ce6edeb20acc",
+        "android_client_info": {
+          "package_name": "com.example.escritorio.merkapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448883937573-1kkq1o9iok8bchhrqrgt5vv2dcvq74pl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKULj49nfDK_Q0CiRWTF0wCJrfoAs5zTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448883937573-1kkq1o9iok8bchhrqrgt5vv2dcvq74pl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

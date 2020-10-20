@@ -1,0 +1,158 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.escritorio.merkapp.FragmentCar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginTop="475dp"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnreliminar"
+            android:layout_width="147dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+
+            android:text="ELIMINAR" />
+
+        <Button
+            android:id="@+id/btnrsalir"
+            android:layout_width="147dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+
+            android:text="SALIR" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+
+        android:layout_marginTop="320dp"
+
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etrfecha"
+            android:layout_width="171dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="24dp"
+
+
+            android:ems="10"
+            android:hint="FECHA"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/etrhora"
+            android:layout_width="162dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="50dp"
+
+
+            android:ems="10"
+            android:hint="HORA"
+            android:inputType="time" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etrnombre"
+            android:layout_width="398dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="56dp"
+            android:ems="10"
+            android:hint="NOMBRE Y APELLIDO"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etrcorreo"
+            android:layout_width="398dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="CORREO"
+            android:inputType="textEmailAddress" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="224dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etrcelular"
+            android:layout_width="171dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="24dp"
+            android:ems="10"
+            android:hint="Nro CELULAR"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/etrpersonas"
+            android:layout_width="162dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="50dp"
+
+
+
+            android:ems="10"
+            android:hint="Nro personas"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="400dp"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnrguardar"
+            android:layout_width="147dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+
+
+            android:text="GUARDAR" />
+
+        <Button
+            android:id="@+id/btnractualizar"
+            android:layout_width="147dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="ACTUALIZAR" />
+    </LinearLayout>
+
+</FrameLayout>

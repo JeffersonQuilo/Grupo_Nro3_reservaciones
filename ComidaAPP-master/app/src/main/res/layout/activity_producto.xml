@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.escritorio.merkapp.ActivityProducto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbladd"
+        android:layout_width="413dp"
+        android:layout_height="43dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/vback"
+        app:title="Agregar Comida"
+        app:titleTextColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imgpasta"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imgcarne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.623"
+        app:layout_constraintLeft_toRightOf="@+id/imgch"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgcarne"
+        app:layout_constraintTop_toTopOf="@+id/imgcarne"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/pastas" />
+
+    <ImageView
+        android:id="@+id/imgcarne"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtseleccione"
+        app:srcCompat="@drawable/carne" />
+
+    <ImageView
+        android:id="@+id/imgmaris"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtseleccione"
+        app:srcCompat="@drawable/mar" />
+
+    <ImageView
+        android:id="@+id/imglic"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtseleccione"
+        app:srcCompat="@drawable/lic" />
+
+    <ImageView
+        android:id="@+id/imgpica"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imglic"
+        app:layout_constraintEnd_toStartOf="@+id/imglic"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imglic"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/pic" />
+
+    <ImageView
+        android:id="@+id/imglasa"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imgmaris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgmaris"
+        app:layout_constraintTop_toTopOf="@+id/imgMaris"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/lasa" />
+
+    <ImageView
+        android:id="@+id/imgseco"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="164dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imgmaris"
+        app:layout_constraintEnd_toStartOf="@+id/imgmaris"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgmaris"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/sec" />
+
+    <ImageView
+        android:id="@+id/imgpollo"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imgcarne"
+        app:layout_constraintEnd_toStartOf="@+id/imgcarne"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imgch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgcarne"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/pollo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="37dp"
+        android:layout_height="19dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Pollo"
+        app:layout_constraintEnd_toEndOf="@+id/imgpollo"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintLeft_toLeftOf="@+id/imgpizza"
+        app:layout_constraintRight_toRightOf="@+id/imgpizza"
+        app:layout_constraintStart_toStartOf="@+id/imgpollo"
+        app:layout_constraintTop_toBottomOf="@+id/imgpollo" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Secos"
+        app:layout_constraintEnd_toEndOf="@+id/imgseco"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/imgpizza"
+        app:layout_constraintRight_toRightOf="@+id/imgpizza"
+        app:layout_constraintStart_toStartOf="@+id/imgseco"
+        app:layout_constraintTop_toBottomOf="@+id/imgseco" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Picad. y Ensaladas"
+        app:layout_constraintEnd_toEndOf="@+id/imgpica"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintLeft_toLeftOf="@+id/imgpizza"
+        app:layout_constraintRight_toRightOf="@+id/imgpizza"
+        app:layout_constraintStart_toStartOf="@+id/imgpica"
+        app:layout_constraintTop_toBottomOf="@+id/imgpica" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Carne"
+        app:layout_constraintEnd_toEndOf="@+id/imgcarne"
+        app:layout_constraintLeft_toLeftOf="@+id/imgch"
+        app:layout_constraintRight_toRightOf="@+id/imgch"
+        app:layout_constraintStart_toStartOf="@+id/imgCarn"
+        app:layout_constraintTop_toBottomOf="@+id/imgcarne" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Mariscos"
+        app:layout_constraintEnd_toEndOf="@+id/imgmaris"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintLeft_toLeftOf="@+id/imgch"
+        app:layout_constraintRight_toRightOf="@+id/imgch"
+        app:layout_constraintStart_toStartOf="@+id/imgmaris"
+        app:layout_constraintTop_toBottomOf="@+id/imgmaris" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Licores"
+        app:layout_constraintEnd_toEndOf="@+id/imglic"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintLeft_toLeftOf="@+id/imgch"
+        app:layout_constraintRight_toRightOf="@+id/imgch"
+        app:layout_constraintStart_toStartOf="@+id/imglic"
+        app:layout_constraintTop_toBottomOf="@+id/imglic" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Pastas"
+        app:layout_constraintEnd_toEndOf="@+id/imgpasta"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/imgham"
+        app:layout_constraintRight_toRightOf="@+id/imgham"
+        app:layout_constraintStart_toStartOf="@+id/imgpasta"
+        app:layout_constraintTop_toBottomOf="@+id/imgpasta" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="lasañas"
+        app:layout_constraintEnd_toEndOf="@+id/imglasa"
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintLeft_toLeftOf="@+id/imgham"
+        app:layout_constraintRight_toRightOf="@+id/imgham"
+        app:layout_constraintStart_toStartOf="@+id/imglasa"
+        app:layout_constraintTop_toBottomOf="@+id/imglasa" />
+
+    <TextView
+        android:id="@+id/txtseleccione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Seleccione categoria"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbladd"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtseleccione"
+        app:layout_constraintVertical_bias="0.726">
+
+        <EditText
+            android:id="@+id/txtnompp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
+
+        <EditText
+            android:id="@+id/txtpreciopp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp">
+
+        <EditText
+            android:id="@+id/txtdespp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripcion"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btncargarp"
+        android:layout_width="409dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="67dp"
+        android:background="@color/colorPrimary"
+        android:text="Cargar"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imgprop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtseleccione"
+        app:srcCompat="@drawable/imgadd" />
+
+</android.support.constraint.ConstraintLayout>
